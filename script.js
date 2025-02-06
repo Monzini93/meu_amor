@@ -49,9 +49,9 @@ function startTimer(startDate) {
         document.getElementById("years").innerText = years;
         document.getElementById("months").innerText = months;
         document.getElementById("days").innerText = days;
-        /*document.getElementById("hours").innerText = hours;
+        document.getElementById("hours").innerText = hours;
         document.getElementById("minutes").innerText = minutes;
-        document.getElementById("seconds").innerText = seconds;*/
+        document.getElementById("seconds").innerText = seconds;
     }
 
     // Atualizar o contador a cada segundo
