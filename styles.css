@@ -1,0 +1,80 @@
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background: #1c1c1c;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: #ff4b5c;
+    padding: 20px;
+    font-size: 1.5em;
+}
+
+.carousel {
+    position: relative;
+    width: 80%;
+    margin: 20px auto;
+    overflow: hidden;
+}
+
+.carousel-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.carousel-slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 100%;
+}
+
+.carousel-slides img {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    display: none;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.5);
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.timer {
+    margin-top: 20px;
+    font-size: 1.2em;
+}
+
+.time-box {
+    display: inline-block;
+    padding: 10px;
+    margin: 5px;
+    background: #ff4b5c;
+    border-radius: 5px;
+    font-size: 1.2em;
+}
+
+.music {
+    margin-top: 20px;
+}
+
+

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nosso Amor</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+
+    <header>
+        <h1>Yuri & Juliene</h1>
+        <p>O amor é o maior presente que podemos receber.</p>
+    </header>
+
+    <section class="carousel">
+        <div class="carousel-container">
+            <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+            <div class="carousel-slides">
+                <img src="img1.jpg" alt="Foto 1">
+                <img src="img2.jpg" alt="Foto 2">
+                <img src="img3.jpg" alt="Foto 3">
+              <!--  <img src="img4.jpg" alt="Foto 4">  -->
+                <img src="img5.jpg" alt="Foto 5">
+                <img src="img6.jpg" alt="Foto 6">
+                <img src="img7.jpg" alt="Foto 7">
+                <img src="img8.jpg" alt="Foto 8">
+                <img src="img9.jpg" alt="Foto 9">
+                <img src="img10.jpg" alt="Foto 10">
+                <img src="img11.jpg" alt="Foto 11">
+            </div>
+            <button class="next" onclick="moveSlide(1)">&#10095;</button>
+        </div>
+    </section>
+
+    <section class="timer">
+        <h2>Compartilhando momentos há:</h2>
+        <div class="time-box">
+            <span id="years">0</span> anos
+        </div>
+        <div class="time-box">
+            <span id="months">0</span> meses
+        </div>
+        <div class="time-box">
+            <span id="days">0</span> dias
+        </div>
+    </section>
+
+    <section class="music">
+        <h2>Nossa Música</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/watch?v=LiDNSfVg3SU&ab_channel=LosHermanos-Topic" 
+            title="Último Romance - Los Hermanos" frameborder="0" allowfullscreen>
+        </iframe>
+    </section>
+
+</body>
+</html>
