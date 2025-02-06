@@ -6,12 +6,18 @@ body {
     color: white;
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
 }
 
 header {
     background: #ff4b5c;
     padding: 20px;
     font-size: 1.5em;
+    width: 100%;
 }
 
 .carousel {
@@ -62,6 +68,7 @@ header {
 .timer {
     margin-top: 20px;
     font-size: 1.2em;
+    width: 100%;
 }
 
 .time-box {
@@ -75,6 +82,17 @@ header {
 
 .music {
     margin-top: 20px;
+    width: 100%;
 }
 
-
+/* Centralizando o conteúdo */
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
