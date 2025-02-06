@@ -6,34 +6,32 @@ body {
     color: white;
     margin: 0;
     padding: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
 }
 
 header {
     background: #ff4b5c;
     padding: 20px;
     font-size: 1.5em;
-    width: 100%;
 }
 
+/* Centralizando o carrossel e ajustando para ocupar toda a largura */
 .carousel {
     position: relative;
-    width: 80%;
-    margin: 20px auto;
+    width: 100%; /* Alterado de 80% para 100% para ocupar toda a largura */
+    margin: 0 auto; /* Removido o margin-top para ficar colado no topo */
     overflow: hidden;
 }
 
+/* Centralizando o container do carrossel */
 .carousel-container {
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
+    width: 100%; /* Garantindo que o container ocupe toda a largura */
 }
 
+/* Ajustando as imagens para serem exibidas corretamente */
 .carousel-slides {
     display: flex;
     transition: transform 0.5s ease-in-out;
@@ -42,11 +40,12 @@ header {
 
 .carousel-slides img {
     width: 100%;
-    max-width: 800px;
+    max-width: 100%; /* Alterado para ocupar toda a largura disponível */
     height: auto;
     display: none;
 }
 
+/* Estilizando os botões de navegação */
 .prev, .next {
     position: absolute;
     top: 50%;
@@ -55,6 +54,7 @@ header {
     border: none;
     padding: 10px;
     cursor: pointer;
+    z-index: 10; /* Garantindo que os botões fiquem acima das imagens */
 }
 
 .prev {
@@ -65,10 +65,10 @@ header {
     right: 10px;
 }
 
+/* Estilos para o timer */
 .timer {
     margin-top: 20px;
     font-size: 1.2em;
-    width: 100%;
 }
 
 .time-box {
@@ -80,19 +80,11 @@ header {
     font-size: 1.2em;
 }
 
+/* Centralizando a seção de música */
 .music {
     margin-top: 20px;
-    width: 100%;
-}
-
-/* Centralizando o conteúdo */
-.content {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
+    justify-content: center; /* Centralizando horizontalmente */
+    align-items: center; /* Centralizando verticalmente */
+    flex-direction: column; /* Organizando os itens em coluna */
 }
